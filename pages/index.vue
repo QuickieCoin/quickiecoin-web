@@ -6,7 +6,7 @@
         quickiecoin-web
       </h1>
       <h2 class="subtitle">
-        Homepage for QuickieCoin
+        YOOOO!
       </h2>
       <div class="links">
         <a
