@@ -2,7 +2,7 @@
   <div>
     <NavBar />
     <nuxt />
-    <footer class="items-center justify-between p-6 border-b w-full bg-white">
+    <footer class="items-center justify-between p-3 border-t w-full bg-white">
       Insert Icons Here
     </footer>
   </div>

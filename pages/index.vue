@@ -21,9 +21,7 @@
       </div>
     </div>
     <div class="container w-full sub-section bg-teal-600">
-      <div>
-        <ContactForm/>
-      </div>
+      <ContactForm/>
     </div>
   </main>
 </template>
