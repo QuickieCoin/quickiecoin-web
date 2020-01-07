@@ -5,19 +5,22 @@
         <h1 class="title">
           FAQ
         </h1>
-        <h2 class="subtitle">
-          Here are some basic perguntas
-        </h2>
+        <div v-for="faq in faqs">
+          <div>{{ faq.question }}</div> {{ faq.answer }}
+        </div>
       </div>
     </div>
   </main>
 </template>
 
 <script>
-// import Logo from '~/components/Logo.vue'
+import { faqs } from '~/common/api'
 
 export default {
-  components: {
+  data () {
+    return {
+      faqs
+    }
   }
 }
 </script>

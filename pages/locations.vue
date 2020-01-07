@@ -5,19 +5,22 @@
         <h1 class="title">
           Locations
         </h1>
-        <h2 class="subtitle">
-          We have tons!
-        </h2>
+        <div v-for="location in locations">
+          {{ location.name }} @ {{ location.store }}
+        </div>
       </div>
     </div>
   </main>
 </template>
 
 <script>
-// import Logo from '~/components/Logo.vue'
+import { locations } from '~/common/api'
 
 export default {
-  components: {
+  data () {
+    return {
+      locations
+    }
   }
 }
 </script>

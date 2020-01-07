@@ -3,8 +3,13 @@ export const contactInfo = {
   phone: '201-419-5933'
 }
 
-export const locations = {
-  zion: {store: 'Cork Wine & Spirits'},
-  harriman: {store: 'NY Pizza & Pasta'},
-  waska: {store: 'Play! Hoboken'}
-}
+export const locations = [
+  { name: 'Zion', store: 'Cork Wine & Spirits' },
+  { name: 'harriman', store: 'NY Pizza & Pasta' },
+  { name: 'waska', store: 'Play! Hoboken' }
+]
+
+export const faqs = [
+  { question: 'Porque sos tan linda?', answer: 'por que si' },
+  { question: 'how we doin?', answer: 'prettttty prettttty good' }
+]
