@@ -14,9 +14,9 @@
         </h1>
 
         <div class="flex items-center w-2/3 m-auto">
-          <img class="flex-1 text-center px-4 py-2 m-2 w-1/6" src="~/assets/images/get-bitcoins-step-1.gif" alt="logo">
-          <img class="flex-1 text-center px-4 py-2 m-2 w-1/6" src="~/assets/images/get-bitcoins-step-2.gif" alt="logo">
-          <img class="flex-1 text-center px-4 py-2 m-2 w-1/6" src="~/assets/images/get-bitcoins-step-3.gif" alt="logo">
+          <img style="clip-path: circle(45%);" class="flex-1 text-center px-4 py-2 m-2 w-1/6" src="~/assets/images/get-bitcoins-step-1.gif" alt="logo">
+          <img style="clip-path: circle(45%);" class="flex-1 text-center px-4 py-2 m-2 w-1/6" src="~/assets/images/get-bitcoins-step-2.gif" alt="logo">
+          <img style="clip-path: circle(45%);" class="flex-1 text-center px-4 py-2 m-2 w-1/6" src="~/assets/images/get-bitcoins-step-3.gif" alt="logo">
         </div>
 
         <div class="flex items-center w-2/3 m-auto">
@@ -56,6 +56,7 @@ export default {
 
 <style>
 .how-it-works-background {
-  background-color: #35e8d7;
+  background-color: #5c9dd5;
+  /* USE CSS VARIABLES */
 }
 </style>

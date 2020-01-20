@@ -57,7 +57,7 @@ html {
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
+  color: white;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
