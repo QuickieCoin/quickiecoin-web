@@ -1,28 +1,47 @@
 <template>
-  <div class="contact-form w-full">
-    <h1 class="subtitle">Contact Us</h1>
-    <form>
-      <div class="input">
-        <label class="w-3/12">Email</label>
+  <div class="w-full max-w-xs">
+    <h1 class="subtitle">
+      Contact Us
+    </h1>
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <div class="mb-4">
+        <label
+          class="block text-gray-700 text-sm font-bold mb-2"
+          for="email"
+        >
+          Email
+        </label>
         <input
-          class="w-8/12 bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 my-2 mx-4 appearance-none leading-normal"
+          id="email"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           type="email"
-          placeholder="satoshi@nakamoto.com"/>
+          placeholder="satoshi@nakamoto.com"
+        >
       </div>
-      <div class="input">
-        <label class="w-3/12">Name</label>
+      <div class="mb-4">
+        <label
+          class="block text-gray-700 text-sm font-bold mb-2"
+          for="name"
+        >
+          Name
+        </label>
         <input
+          id="name"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           type="text"
-          class="w-8/12 bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 my-2 mx-4 appearance-none leading-normal"
-          placeholder="Satoshi Nakamoto"/>
+          placeholder="Satoshi Nakamoto"
+        >
       </div>
-      <div class="input">
-        <label class="w-3/12">Message</label>
-        <textarea
-          class="w-8/12 bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 my-2 mx-4 appearance-none leading-normal"
-          type="message"/>
+      <label class="block">
+        <span class="text-gray-700">Message</span>
+        <textarea class="form-textarea mt-1 block w-full" rows="3" placeholder="Enter your message here..." />
+      </label>
+
+      <div class="flex items-center justify-between">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+          Submit
+        </button>
       </div>
-      <input type="button">Submit</button>
     </form>
   </div>
 </template>

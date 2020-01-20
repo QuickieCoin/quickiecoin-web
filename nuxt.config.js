@@ -1,3 +1,4 @@
+require('dotenv').config()
 
 export default {
   mode: 'universal',
@@ -36,7 +37,9 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+
+    '@nuxtjs/dotenv'
   ],
   /*
   ** Nuxt.js modules
@@ -60,5 +63,11 @@ export default {
     */
     extend (config, ctx) {
     }
-  }
+  },
+  env: {
+    airtableKey: process.env.AIRTABLE_API_KEY
+  },
+  serverMiddleware: [
+    '~/api/airtable'
+  ]
 }

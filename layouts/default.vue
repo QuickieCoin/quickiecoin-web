@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar />
+    <NavBar class="z-1" />
     <nuxt />
     <footer class="items-center justify-between p-3 border-t w-full bg-white">
       Insert Icons Here
@@ -47,12 +47,10 @@ html {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: futura-lt-w01-book,sans-serif;
   display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
+  font-size: 46px;
+  color: white;
   letter-spacing: 1px;
 }
 
@@ -74,10 +72,6 @@ html {
 
 .quickiecoin-text {
   color: #599bd5;
-}
-
-.quickiecoin-background {
-  background-color: #599bd5;
 }
 
 .quickiecoin-link:hover {

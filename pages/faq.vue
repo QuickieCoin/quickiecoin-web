@@ -5,7 +5,7 @@
         <h1 class="title">
           FAQ
         </h1>
-        <div v-for="faq in faqs">
+        <div v-for="faq in faqs" v-bind:key="faq.id">
           <div>{{ faq.question }}</div> {{ faq.answer }}
         </div>
       </div>
