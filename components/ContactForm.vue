@@ -3,7 +3,9 @@
     <h1 class="subtitle">
       Contact Us
     </h1>
-    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" 
+    <!-- TODO: Better Success handling -->
+    <form
+      class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
       name="contact-form"
       method="post"
       data-netlify="true"

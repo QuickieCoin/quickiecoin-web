@@ -17,6 +17,9 @@
           </span>
         </div>
       </div>
+      <div class="call-us float-right">
+        <a href="tel:12014195933‬">‪201-419-5933‬</a>
+      </div>
     </nav>
   </header>
 </template>
@@ -35,5 +38,13 @@ export default {
 <style>
 .qc-nav {
   z-index: 1;
+}
+
+.call-us {
+  background-color: rgba(81, 158, 240, 0.18);
+  border: solid rgba(182, 243, 232, 1) 0px;
+  cursor: pointer !important;
+  padding: 6px;
+  border-radius: 36px;
 }
 </style>

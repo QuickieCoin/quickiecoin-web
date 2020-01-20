@@ -2,18 +2,18 @@
   <div>
     <NavBar/>
     <nuxt />
-    <footer class="items-center justify-between p-3 border-t w-full bg-white">
-      Insert Icons Here
-    </footer>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import NavBar from '~/components/NavBar.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
-    NavBar
+    NavBar,
+    Footer
   }
 }
 </script>
