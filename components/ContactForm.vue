@@ -3,7 +3,7 @@
     <h1 class="subtitle">
       Contact Us
     </h1>
-    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" data-netlify="true" name="contact" method="POST">
       <div class="mb-4">
         <label
           class="block text-gray-700 text-xl font-bold mb-2"
@@ -13,6 +13,7 @@
         </label>
         <input
           id="email"
+          name="email"
           class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           type="email"
           placeholder="satoshi@nakamoto.com"
@@ -27,6 +28,7 @@
         </label>
         <input
           id="name"
+          name="name"
           class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           type="text"
           placeholder="Satoshi Nakamoto"
@@ -39,11 +41,11 @@
         >
           Message
         </label>
-        <textarea id="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline form-textarea mt-1 block w-full" rows="3" placeholder="Enter your message here..." />
+        <textarea id="message" name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline form-textarea mt-1 block w-full" rows="3" placeholder="Enter your message here..." />
       </label>
 
       <div class="flex items-center justify-between">
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" type="button">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
           Submit
         </button>
       </div>
