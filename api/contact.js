@@ -49,5 +49,5 @@ const sendMail = (name, email, message) => {
 
 export default {
   path: '/api/contact',
-  handler: app
+  handler
 }
