@@ -3,7 +3,7 @@ import Airtable from 'airtable'
 
 const handler = express()
 
-handler.all('/locations', (req, res) => {
+handler.all('/', (req, res) => {
   const base = new Airtable({ apiKey: process.env.AIRTABLE_KEY }).base('appPru6lIm9uZDdiy')
   base('Locations').select({
     view: 'Grid view'
@@ -16,6 +16,6 @@ handler.all('/locations', (req, res) => {
 })
 
 module.exports = {
-  path: '/api/',
+  path: '/api/locations',
   handler
 }

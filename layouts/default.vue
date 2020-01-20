@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar class="z-1" />
+    <NavBar/>
     <nuxt />
     <footer class="items-center justify-between p-3 border-t w-full bg-white">
       Insert Icons Here
@@ -64,6 +64,7 @@ html {
 
 .container.sub-section {
     max-width: 100%;
+    min-height: 600px;
 }
 
 .links {

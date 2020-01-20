@@ -68,6 +68,7 @@ export default {
     airtableKey: process.env.AIRTABLE_API_KEY
   },
   serverMiddleware: [
-    '~/api/airtable'
+    '~/api/airtable',
+    '~/api/contact'
   ]
 }
