@@ -29,7 +29,10 @@ export default {
   name: 'NavBar',
   data () {
     return {
-      links: [{ url: 'locations', title: 'Locations' }, { url: 'faq', title: 'FAQ' }]
+      links: [
+        { url: 'locations', title: 'Locations' }
+        // { url: 'faq', title: 'FAQ' }
+      ]
     }
   }
 }

@@ -20,7 +20,7 @@ export const locations = [{
     'id': 'recBkCi4WBTf9Mxr9',
     'fields': {
       'Address': '267 Centre Ave, Secaucus, NJ 07094',
-      'Hours': 'Monday - Saturday: 9AM–5:00PM',
+      'Hours': 'Monday - Saturday: 9AM–5PM',
       'Name': 'Heritage',
       'Location': "Giovanni's Italian Deli",
       'Image': [{
@@ -52,7 +52,7 @@ export const locations = [{
   },
   'fields': {
     'Address': '267 Centre Ave, Secaucus, NJ 07094',
-    'Hours': 'Monday - Saturday: 9AM–5:00PM',
+    'Hours': 'Monday - Saturday: 9AM–5PM',
     'Name': 'Heritage',
     'Location': "Giovanni's Italian Deli",
     'Image': [{
@@ -96,7 +96,7 @@ export const locations = [{
     'id': 'recdk06nbGKAxKtWp',
     'fields': {
       'Address': '19 Interstate Shop Center, Ramsey, NJ  07446',
-      'Hours': 'Sunday - Thursday: 10AM–9:50PM\n\nFriday & Saturday: 10AM–10:50PM',
+      'Hours': 'Sunday - Thursday: 10AM–9:50PM\nFriday & Saturday: 10AM–10:50PM',
       'Name': 'Harriman',
       'Location': 'New York Pizza & Pasta',
       'Image': [{
@@ -128,7 +128,7 @@ export const locations = [{
   },
   'fields': {
     'Address': '19 Interstate Shop Center, Ramsey, NJ  07446',
-    'Hours': 'Sunday - Thursday: 10AM–9:50PM\n\nFriday & Saturday: 10AM–10:50PM',
+    'Hours': 'Sunday - Thursday: 10AM–9:50PM\nFriday & Saturday: 10AM–10:50PM',
     'Name': 'Harriman',
     'Location': 'New York Pizza & Pasta',
     'Image': [{
@@ -172,7 +172,7 @@ export const locations = [{
     'id': 'recvouyGeMB3i27Al',
     'fields': {
       'Address': '1012 Grand St 3rd Floor, Hoboken, NJ 07030\n',
-      'Hours': 'Everyday: 11AM–10:00PM',
+      'Hours': 'Everyday: 11AM–10PM',
       'Name': 'Waska',
       'Location': 'Hoboken Game Lounge',
       'Image': [{
@@ -204,7 +204,7 @@ export const locations = [{
   },
   'fields': {
     'Address': '1012 Grand St 3rd Floor, Hoboken, NJ 07030\n',
-    'Hours': 'Everyday: 11AM–10:00PM',
+    'Hours': 'Everyday: 11AM–10PM',
     'Name': 'Waska',
     'Location': 'Hoboken Game Lounge',
     'Image': [{
@@ -248,7 +248,7 @@ export const locations = [{
     'id': 'recpdiHcJGr5SKzqe',
     'fields': {
       'Address': '1450 Washington St, Hoboken, NJ 07030',
-      'Hours': 'Monday - Wednesday: 10AM–10:00PM\n\nThursday - Saturday: 10AM–11:00PM\n\nSunday: 11AM–8:00PM',
+      'Hours': 'Monday - Wednesday: 10AM–10PM\nThursday - Saturday: 10AM–11PM\nSunday: 11AM–8PM',
       'Name': 'Zion',
       'Location': 'Cork Wine & Spirits',
       'Image': [{
@@ -280,7 +280,7 @@ export const locations = [{
   },
   'fields': {
     'Address': '1450 Washington St, Hoboken, NJ 07030',
-    'Hours': 'Monday - Wednesday: 10AM–10:00PM\n\nThursday - Saturday: 10AM–11:00PM\n\nSunday: 11AM–8:00PM',
+    'Hours': 'Monday - Wednesday: 10AM–10PM\nThursday - Saturday: 10AM–11PM\nSunday: 11AM–8PM',
     'Name': 'Zion',
     'Location': 'Cork Wine & Spirits',
     'Image': [{
@@ -324,7 +324,7 @@ export const locations = [{
     'id': 'recGxHKIaFkpH8l4e',
     'fields': {
       'Address': '399 Somerset St, Harrison, NJ 07029',
-      'Hours': 'Monday - Saturday: 10AM–10:00PM\n\nSunday: 12PM–8:00PM',
+      'Hours': 'Monday - Saturday: 10AM–10PM\nSunday: 12PM–8PM',
       'Name': 'Riverside',
       'Location': 'Cork Wine & Spirits',
       'Image': [{
@@ -356,7 +356,7 @@ export const locations = [{
   },
   'fields': {
     'Address': '399 Somerset St, Harrison, NJ 07029',
-    'Hours': 'Monday - Saturday: 10AM–10:00PM\n\nSunday: 12PM–8:00PM',
+    'Hours': 'Monday - Saturday: 10AM–10PM\nSunday: 12PM–8PM',
     'Name': 'Riverside',
     'Location': 'Cork Wine & Spirits',
     'Image': [{
@@ -422,12 +422,13 @@ export const locations = [{
   'fields': {}
 }]
 
-export const faqs = [{
-  question: 'Porque sos tan linda?',
-  answer: 'por que si'
-},
-{
-  question: 'how we doin?',
-  answer: 'prettttty prettttty good'
-}
+export const faqs = [
+  // {
+  //   question: 'Porque sos tan linda?',
+  //   answer: 'por que si'
+  // },
+  // {
+  //   question: 'how we doin?',
+  //   answer: 'prettttty prettttty good'
+  // }
 ]

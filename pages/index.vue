@@ -33,7 +33,6 @@
             </h2>
           </div>
         </div>
-
       </div>
     </div>
     <div class="container w-full sub-section contact-section">
