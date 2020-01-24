@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div :style="{ backgroundImage: `url(${douroBackground})` }" class="container w-full sub-section bg-fixed bg-no-repeat bg-cover quickiecoin-background">
+    <div :style="{ backgroundImage: `url(${douroBackground})` }" class="container w-auto sub-section bg-fixed bg-no-repeat bg-cover quickiecoin-background">
       <div class="absolute z-0 block p-8 left-0 w-1/3">
         <h1 style="top: 10%; width: 380px;" class="title font-medium">
           The easiest way to buy Bitcoin.
