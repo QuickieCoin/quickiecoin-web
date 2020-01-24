@@ -22,7 +22,7 @@ $ npm run generate
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 
-## Airtable API
+## Airtable / https://www.sanity.io/ API
 
 Needed Tables
 
