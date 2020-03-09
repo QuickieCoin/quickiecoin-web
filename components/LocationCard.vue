@@ -19,10 +19,10 @@
     </div>
     <div
       :style="{ backgroundImage: `url('${location.Image[0].url}')` }"
+      :title="`${location.Name} image`"
       class="w-1/3 mb-4 atm-image"
-      :title="`${location.Name} image`" />
-    <div class="w-1/3 mb-4 atm-image">
-    </div>
+    />
+    <div class="w-1/3 mb-4 atm-image" />
   </div>
 </template>
 
