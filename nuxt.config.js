@@ -58,6 +58,10 @@ export default {
    */
   modules: [
     '@nuxtjs/axios',
+    ['nuxt-sanity', {
+      projectId: 'dkkl7znc',
+      dataset: 'production'
+    }],
     ['nuxt-fontawesome', {
       imports: [{
         set: '@fortawesome/free-solid-svg-icons',

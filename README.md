@@ -24,19 +24,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## Airtable / https://www.sanity.io/ API
 
-Needed Tables
+Needed Fixes
 
-- Locations
-- Social Media Links
-- Content
-  - Main Message
-  - Tagline
-- FAQs
-- Company Info
-  - Support Email
-  - Phone
+- Mobile Friendly
+- Location Styling
 
 Needed Integrations
 
+- Integration with CMS
 - Chat message goes to Slack
-- Contact form goes to Slack

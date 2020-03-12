@@ -10,7 +10,7 @@
         </div>
 
         <div v-for="location in locations" v-bind:key="location.name">
-          <LocationCard class="m-4 w-full" :location="location" />
+          <LocationCard :location="location" class="m-4 w-full" />
         </div>
       </div>
     </div>
@@ -21,25 +21,24 @@
 import LocationCard from '~/components/LocationCard.vue'
 // import Map from '~/components/Map.vue'
 
-const apiData = require('~/common/api')
-
 export default {
   components: {
     LocationCard
     // Map
   },
   data () {
-    const locationData = apiData.locations
-      .map(location => location.fields)
-      .filter(location => !!location.Name)
-
     return {
-      locations: locationData
+      locations: []
+    }
+  },
+  async mounted () {
+    this.locations = await this.fetchMachines()
+  },
+  methods: {
+    fetchMachines (query) {
+      return this.$sanity.fetch('*[_type == "machine"]')
     }
   }
-  // asyncData ({ params }) {
-  //   axios.get(`/api/locations`)
-  // }
 }
 </script>
 

@@ -3,30 +3,32 @@
     <div class="w-1/3 mb-4">
       <div class="mb-8">
         <div class="text-black font-bold text-xl mb-2">
-          {{ location.Location }}
+          {{ location.location }}
         </div>
         <p class="text-grey-darker text-base">
-          {{ location.Address }}
+          {{ location.address }}
         </p>
         <p class="text-grey-darker text-base">
           Buy Bitcoin at this location
           <!-- Add " or sell" for Waska -->
         </p>
         <p class="text-grey-darker text-base location-hours">
-          {{ location.Hours.trim() }}
+          {{ location.hours.trim() }}
         </p>
       </div>
     </div>
-    <div
-      :style="{ backgroundImage: `url('${location.Image[0].url}')` }"
-      :title="`${location.Name} image`"
+    <!-- <div
+      :style="{ backgroundImage: `url('${location.thumb}')` }"
+      :title="`${location.name} image`"
       class="w-1/3 mb-4 atm-image"
-    />
+    /> -->
+    <img v-if="location.thumb" :src="imageUrlFor( location.thumb ).width(240)">
     <div class="w-1/3 mb-4 atm-image" />
   </div>
 </template>
 
 <script>
+import imageUrlBuilder from '@sanity/image-url'
 
 const defaultLocation = {
   Location: 'Could not find',
@@ -46,8 +48,14 @@ export default {
       }
     }
   },
-  data () {
-    return {
+  computed: {
+    imageBuilder () {
+      return imageUrlBuilder(this.$sanity)
+    }
+  },
+  methods: {
+    imageUrlFor (source) {
+      return this.imageBuilder.image(source)
     }
   }
 }
