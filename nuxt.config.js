@@ -2,18 +2,18 @@ require('dotenv').config()
 
 export default {
   mode: 'universal',
-  generate: {
-    routes () {
-      const fs = require('fs')
-      const path = require('path')
-      return fs.readdirSync('./assets/content/blog').map((file) => {
-        return {
-          route: `/blog/${path.parse(file).name}`, // Return the slug
-          payload: require(`./assets/content/blog/${file}`)
-        }
-      })
-    }
-  },
+  // generate: {
+  //   routes () {
+  //     const fs = require('fs')
+  //     const path = require('path')
+  //     return fs.readdirSync('./assets/content/blog').map((file) => {
+  //       return {
+  //         route: `/blog/${path.parse(file).name}`, // Return the slug
+  //         payload: require(`./assets/content/blog/${file}`)
+  //       }
+  //     })
+  //   }
+  // },
   head: {
     title: process.env.npm_package_name || '',
     meta: [{
