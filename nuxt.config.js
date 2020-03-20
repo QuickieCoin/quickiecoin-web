@@ -2,9 +2,18 @@ require('dotenv').config()
 
 export default {
   mode: 'universal',
-  /*
-   ** Headers of the page
-   */
+  generate: {
+    routes () {
+      const fs = require('fs')
+      const path = require('path')
+      return fs.readdirSync('./assets/content/blog').map((file) => {
+        return {
+          route: `/blog/${path.parse(file).name}`, // Return the slug
+          payload: require(`./assets/content/blog/${file}`)
+        }
+      })
+    }
+  },
   head: {
     title: process.env.npm_package_name || '',
     meta: [{
@@ -26,38 +35,21 @@ export default {
       href: '/favicon.ico'
     }]
   },
-  /*
-   ** Customize the progress-bar color
-   */
   loading: {
     color: '#fff'
   },
-  /*
-   ** Global CSS
-   */
   css: [],
-  /*
-   ** Plugins to load before mounting the App
-   */
   plugins: [
-    { src: '~/plugins/mapbox', mode: 'client' },
+    { src: '~/plugins/mapbox', mode: 'client' }
   ],
-  /*
-   ** Nuxt.js dev-modules
-   */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-
     '@nuxtjs/dotenv'
   ],
-  /*
-   ** Nuxt.js modules
-   */
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/markdownit',
     ['nuxt-sanity', {
       projectId: 'dkkl7znc',
       dataset: 'production'
@@ -73,18 +65,11 @@ export default {
       }]
     }]
   ],
-  /*
-   ** Axios module configuration
-   ** See https://axios.nuxtjs.org/options
-   */
   axios: {},
-  /*
-   ** Build configuration
-   */
+  markdownit: {
+    injected: true
+  },
   build: {
-    /*
-     ** You can extend webpack config here
-     */
     extend (config, ctx) {}
   },
   env: {
