@@ -21,14 +21,9 @@ $ npm run generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
-
-## Airtable / https://www.sanity.io/ API
-
 Needed Fixes
 
 - Mobile Friendly
 - Location Styling
-
-Needed Integrations
-
-- Hotjar?
+- Fix Title + Favicon
+- Add FAQs

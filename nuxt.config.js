@@ -3,7 +3,7 @@ require('dotenv').config()
 export default {
   mode: 'universal',
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'QuickieCoin',
     meta: [{
       charset: 'utf-8'
     },

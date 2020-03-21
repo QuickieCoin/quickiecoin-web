@@ -1,7 +1,7 @@
 {
   "name": "quickiecoin-web",
   "version": "1.0.0",
-  "description": "Homepage for QuickieCoin",
+  "description": "QuickieCoin's Homepage",
   "author": "Sam Feder",
   "private": true,
   "scripts": {
