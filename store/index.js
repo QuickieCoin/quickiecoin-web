@@ -5,8 +5,8 @@ export const state = () => ({
 
 export const mutations = {
   setContent (state, { faqs, locations }) {
-    state.locations = faqs
-    state.faqs = locations
+    state.faqs = faqs
+    state.locations = locations
   }
 }
 

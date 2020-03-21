@@ -33,3 +33,6 @@ Needed Integrations
 
 - Integration with CMS
 - Chat message goes to Slack
+- Google Analytics?
+- Cloudflare?
+- Hotjar?
