@@ -29,7 +29,8 @@ export default {
   css: [],
   plugins: [
     { src: '~/plugins/mapbox', mode: 'client' },
-    { src: '~/plugins/ga', mode: 'client' }
+    { src: '~/plugins/ga', mode: 'client' },
+    { src: '~/plugins/hotjar', mode: 'client' }
   ],
   buildModules: [
     '@nuxtjs/eslint-module',

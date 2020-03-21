@@ -31,5 +31,4 @@ Needed Fixes
 
 Needed Integrations
 
-- Cloudflare?
 - Hotjar?
