@@ -14,12 +14,10 @@
 </template>
 
 <script>
-import { faqs } from '~/common/api'
-
 export default {
   data () {
     return {
-      faqs
+      faqs: []
     }
   }
 }

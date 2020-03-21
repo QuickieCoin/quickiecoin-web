@@ -62,13 +62,6 @@ export default {
   build: {
     extend (config, ctx) {}
   },
-  env: {
-    airtableKey: process.env.AIRTABLE_API_KEY
-  },
-  serverMiddleware: [
-    '~/api/airtable',
-    '~/api/contact'
-  ],
   vue: {
     config: {
       productionTip: false,

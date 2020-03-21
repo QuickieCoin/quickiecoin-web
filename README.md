@@ -27,3 +27,4 @@ Needed Fixes
 - Location Styling
 - Fix Title + Favicon
 - Add FAQs
+- Add Sanity Studio into repo + at /admin
