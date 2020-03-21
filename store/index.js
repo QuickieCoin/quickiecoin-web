@@ -1,21 +1,20 @@
-// export const state = () => ({
-//   blogPosts: []
-// })
+export const state = () => ({
+  locations: [],
+  faqs: []
+})
 
-// export const mutations = {
-//   setBlogPosts (state, list) {
-//     state.blogPosts = list
-//   }
-// }
+export const mutations = {
+  setContent (state, { faqs, locations }) {
+    state.locations = faqs
+    state.faqs = locations
+  }
+}
 
-// export const actions = {
-//   async nuxtServerInit ({ commit }) {
-//     const files = await require.context('~/assets/content/blog/', false, /\.json$/)
-//     const blogPosts = files.keys().map((key) => {
-//       const res = files(key)
-//       res.slug = key.slice(2, -5)
-//       return res
-//     })
-//     await commit('setBlogPosts', blogPosts)
-//   }
-// }
+export const actions = {
+  async nuxtServerInit ({ commit }) {
+    const locations = await this.$sanity.fetch('*[_type == "machine"]')
+    const faqs = await this.$sanity.fetch('*[_type == "faqs"]')
+
+    await commit('setContent', { faqs, locations })
+  }
+}

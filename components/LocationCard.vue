@@ -12,8 +12,8 @@
           Buy Bitcoin at this location
           <!-- Add " or sell" for Waska -->
         </p>
-        <p class="text-grey-darker text-base location-hours">
-          {{ location.hours.trim() }}
+        <p v-for="storeHour in location.hours" v-bind:key="storeHour" class="text-grey-darker text-base location-hours">
+          {{ storeHour.trim() }}
         </p>
       </div>
     </div>
@@ -62,9 +62,6 @@ export default {
 </script>
 
 <style lang="scss">
-  .location-hours {
-    white-space: pre;
-  }
   .atm-image {
     background-repeat: no-repeat;
     background-position: center;

@@ -9,7 +9,7 @@
           <!-- <Map/> -->
         </div>
 
-        <div v-for="location in locations" v-bind:key="location.name">
+        <div v-for="location in locations" v-bind:key="location.id">
           <LocationCard :location="location" class="m-4 w-full" />
         </div>
       </div>
@@ -26,17 +26,9 @@ export default {
     LocationCard
     // Map
   },
-  data () {
-    return {
-      locations: []
-    }
-  },
-  async mounted () {
-    this.locations = await this.fetchMachines()
-  },
-  methods: {
-    fetchMachines (query) {
-      return this.$sanity.fetch('*[_type == "machine"]')
+  computed: {
+    locations () {
+      return this.$store.state.locations
     }
   }
 }
