@@ -26,6 +26,7 @@
     "nodemailer": "^6.4.2",
     "nuxt": "^2.0.0",
     "nuxt-fontawesome": "^0.4.0",
+    "nuxt-gmaps": "^1.1.9",
     "nuxt-sanity": "0.0.8",
     "validator": "^12.1.0",
     "vue-mapbox": "^0.4.1",

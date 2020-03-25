@@ -6,7 +6,7 @@
           Locations
         </h1>
         <div>
-          <!-- <Map/> -->
+          <VueMap />
         </div>
 
         <div v-for="location in locations" v-bind:key="location.id">
@@ -19,12 +19,12 @@
 
 <script>
 import LocationCard from '~/components/LocationCard.vue'
-// import Map from '~/components/Map.vue'
+import VueMap from '~/components/VueMap.vue'
 
 export default {
   components: {
-    LocationCard
-    // Map
+    LocationCard,
+    VueMap
   },
   computed: {
     locations () {

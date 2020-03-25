@@ -44,6 +44,10 @@ export default {
       projectId: 'dkkl7znc',
       dataset: 'production'
     }],
+    ['nuxt-gmaps', {
+      key: process.env.GOOGLE_MAPS_API_KEY
+      // you can use libraries: ['places']
+    }],
     ['nuxt-fontawesome', {
       imports: [{
         set: '@fortawesome/free-solid-svg-icons',
