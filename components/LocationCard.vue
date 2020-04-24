@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="sm:w-1/2 md:w-1/3 px-2">
-      <img v-if="location.thumb" :src="imageUrlFor( location.thumb ).height(400)" class="object-contain">
+      <img v-if="location.thumb" :src="imageUrlFor( location.thumb ).height(400)" class="object-contain" alt="thumb">
     </div>
     <div class="sm:w-1/2 md:w-1/3 px-2">
       <VueMap :location="location" />

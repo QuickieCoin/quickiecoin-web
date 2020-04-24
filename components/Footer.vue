@@ -1,5 +1,5 @@
 <template>
-  <footer class="items-center justify-between p-3 border-t w-full mb-5 bg-white">
+  <footer class="items-center justify-between p-3 border-t w-full flex justify-between bg-white">
     <span class="float-left">
       <a href="mailto:team@quickiecoin.com">
         <font-awesome-icon :icon="['fas', 'envelope']" class="icon alt" />
@@ -7,11 +7,8 @@
       </a>
     </span>
     <span class="float-right">
-      <a target="_blank" href="http://twitter.com/quickiecoin">
-        <font-awesome-icon :icon="['fab', 'twitter']" class="icon alt" />
-      </a>
-      <a target="_blank" href="http://instagram.com/quickiecoin">
-        <font-awesome-icon :icon="['fab', 'instagram']" class="icon alt" />
+      <a v-for="social in socials" :href="`http://${social}.com/quickiecoin`" :key="`social-${social}`" target="_blank">
+        <font-awesome-icon :style="{fontSize: '48px'}" :icon="['fab', social]" class="icon alt mx-3" />
       </a>
     </span>
   </footer>
@@ -22,12 +19,11 @@ export default {
   name: 'Footer',
   data () {
     return {
-
+      socials: ['instagram', 'twitter']
     }
   }
 }
 </script>
 
 <style>
-
 </style>

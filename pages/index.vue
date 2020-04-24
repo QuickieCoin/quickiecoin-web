@@ -15,19 +15,19 @@
 
         <div class="flex flex-wrap mb-4 m-auto">
           <div class="m-2 flex-1">
-            <img style="clip-path: circle(40%);" src="~/assets/images/get-bitcoins-step-1.gif">
+            <img style="clip-path: circle(40%);" alt="scan-wallet" src="~/assets/images/get-bitcoins-step-1.gif">
             <h2 class="subtitle flex-1">
               Scan your wallet
             </h2>
           </div>
           <div class="m-2 flex-1">
-            <img style="clip-path: circle(40%);" src="~/assets/images/get-bitcoins-step-2.gif">
+            <img style="clip-path: circle(40%);" alt="insert-cash" src="~/assets/images/get-bitcoins-step-2.gif">
             <h2 class="subtitle flex-1">
               Insert cash
             </h2>
           </div>
           <div class="m-2 flex-1">
-            <img style="clip-path: circle(40%);" src="~/assets/images/get-bitcoins-step-3.gif">
+            <img style="clip-path: circle(40%);" alt="send-bitcoin" src="~/assets/images/get-bitcoins-step-3.gif">
             <h2 class="subtitle flex-1">
               Send Bitcoin
             </h2>
