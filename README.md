@@ -28,3 +28,4 @@ Needed Fixes
 - Fix Title + Favicon
 - Add FAQs
 - Add Sanity Studio into repo + at /admin
+- Fix lighthouse score, especially for mobile

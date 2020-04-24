@@ -1,6 +1,6 @@
 <template>
-  <div class="flex -mb-4">
-    <div class="w-1/3 mb-4">
+  <div class="flex flex-wrap -mx-2">
+    <div class="sm:w-1/2 md:w-1/3 px-2">
       <div class="mb-8">
         <div class="text-black font-bold text-xl mb-2">
           {{ location.location }}
@@ -17,18 +17,18 @@
         </p>
       </div>
     </div>
-    <!-- <div
-      :style="{ backgroundImage: `url('${location.thumb}')` }"
-      :title="`${location.name} image`"
-      class="w-1/3 mb-4 atm-image"
-    /> -->
-    <img v-if="location.thumb" :src="imageUrlFor( location.thumb ).width(240)">
-    <div class="w-1/3 mb-4 atm-image" />
+    <div class="sm:w-1/2 md:w-1/3 px-2">
+      <img v-if="location.thumb" :src="imageUrlFor( location.thumb ).height(400)" class="object-contain">
+    </div>
+    <div class="sm:w-1/2 md:w-1/3 px-2">
+      <VueMap :location="location" />
+    </div>
   </div>
 </template>
 
 <script>
 import imageUrlBuilder from '@sanity/image-url'
+import VueMap from '~/components/VueMap.vue'
 
 const defaultLocation = {
   Location: 'Could not find',
@@ -37,9 +37,9 @@ const defaultLocation = {
 
 export default {
   name: 'LocationCard',
-  // components: {
-  //   Map
-  // },
+  components: {
+    VueMap
+  },
   props: {
     location: {
       type: Object,
@@ -62,11 +62,4 @@ export default {
 </script>
 
 <style lang="scss">
-  .atm-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 16rem;
-    height: 16rem;
-  }
 </style>

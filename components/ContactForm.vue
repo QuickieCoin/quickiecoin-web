@@ -11,12 +11,10 @@
       data-netlify="true"
       data-netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact-form" />
-
       <div class="mb-4">
         <label
           class="block text-gray-700 text-xl font-bold mb-2"
-          for="email"
-        >
+          for="email">
           Email
         </label>
         <input
@@ -25,6 +23,7 @@
           class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           type="email"
           placeholder="satoshi@nakamoto.com"
+          data-hj-whitelist
         >
       </div>
       <div class="mb-4">
@@ -40,6 +39,7 @@
           class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           type="text"
           placeholder="Satoshi Nakamoto"
+          data-hj-whitelist
         >
       </div>
       <label class="block mb-2">
@@ -49,7 +49,14 @@
         >
           Message
         </label>
-        <textarea id="message" name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline form-textarea mt-1 block w-full" rows="3" placeholder="Enter your message here..." />
+        <textarea
+          id="message"
+          name="message"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline form-textarea mt-1 block w-full"
+          rows="3"
+          placeholder="Enter your message here..."
+          data-hj-whitelist
+        />
       </label>
 
       <div class="flex items-center justify-between">
