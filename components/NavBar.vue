@@ -49,5 +49,7 @@ export default {
   cursor: pointer !important;
   padding: 6px;
   border-radius: 36px;
+  min-width: 130px;
+  text-align: center;
 }
 </style>
