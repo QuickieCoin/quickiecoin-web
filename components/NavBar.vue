@@ -1,12 +1,12 @@
 <template>
   <header>
-    <nav class="flex items-center justify-between p-6 border-b w-full fixed bg-white qc-nav">
+    <nav class="flex items-center justify-between p-6 border-b w-full absolute bg-white qc-nav flex-wrap">
       <NuxtLink to="/" exact>
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <img class="logo max-w-xs" src="~/assets/images/logo.png" alt="logo">
         </div>
       </NuxtLink>
-      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto sm:content-center text-left p-3">
         <div class="text-sm lg:flex-grow">
           <span v-for="link in links" v-bind:key="link.title">
             <NuxtLink :to="`/${link.url}`">
