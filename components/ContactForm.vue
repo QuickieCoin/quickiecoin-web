@@ -9,12 +9,14 @@
       name="contact-form"
       method="post"
       data-netlify="true"
-      data-netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="contact-form" />
+      data-netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value="contact-form">
       <div class="mb-4">
         <label
           class="block text-gray-700 text-xl font-bold mb-2"
-          for="email">
+          for="email"
+        >
           Email
         </label>
         <input

@@ -14,22 +14,13 @@
         </h1>
 
         <div class="flex flex-wrap mb-4 m-auto">
-          <div class="m-2 flex-1">
-            <img style="clip-path: circle(40%);" alt="scan-wallet" src="~/assets/images/get-bitcoins-step-1.gif">
+          <div v-for="(step, index) in steps" :key="`step-${index+1}`" class="m-2 flex-1">
+            <video autoplay loop muted playsinline style="clip-path: circle(40%);">
+              <source :src="mp4s[index]" :alt="step" type="video/webm">
+              <source :src="webms[index]" :alt="step" type="video/mp4">
+            </video>
             <h2 class="subtitle flex-1">
-              Scan your wallet
-            </h2>
-          </div>
-          <div class="m-2 flex-1">
-            <img style="clip-path: circle(40%);" alt="insert-cash" src="~/assets/images/get-bitcoins-step-2.gif">
-            <h2 class="subtitle flex-1">
-              Insert cash
-            </h2>
-          </div>
-          <div class="m-2 flex-1">
-            <img style="clip-path: circle(40%);" alt="send-bitcoin" src="~/assets/images/get-bitcoins-step-3.gif">
-            <h2 class="subtitle flex-1">
-              Send Bitcoin
+              {{ step }}
             </h2>
           </div>
         </div>
@@ -44,6 +35,12 @@
 <script>
 
 import douroBackground from '~/assets/images/douro.jpg'
+import step1webm from '~/assets/images/get-bitcoins-step-1.webm'
+import step1mp4 from '~/assets/images/get-bitcoins-step-1.mp4'
+import step2webm from '~/assets/images/get-bitcoins-step-2.webm'
+import step2mp4 from '~/assets/images/get-bitcoins-step-2.mp4'
+import step3webm from '~/assets/images/get-bitcoins-step-3.webm'
+import step3mp4 from '~/assets/images/get-bitcoins-step-3.mp4'
 
 import ContactForm from '~/components/ContactForm.vue'
 
@@ -52,7 +49,12 @@ export default {
     ContactForm
   },
   data () {
-    return { douroBackground }
+    return {
+      douroBackground,
+      steps: ['Scan Your Wallet', 'Insert Cash', 'Send Bitcoin'],
+      mp4s: [step1mp4, step2mp4, step3mp4],
+      webms: [step1webm, step2webm, step3webm]
+    }
   },
   head () {
     return {
