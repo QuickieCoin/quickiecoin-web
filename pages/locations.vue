@@ -17,6 +17,15 @@
 import LocationCard from '~/components/LocationCard.vue'
 
 export default {
+  head () {
+    return {
+      title: 'Locations',
+      meta: [
+        { hid: 'description', name: 'description', content: 'The location of all QuickieCoin ATMs throughout New Jersey.' }
+      ]
+    }
+  },
+  transition: 'slide-left',
   components: {
     LocationCard
   },

@@ -1,5 +1,5 @@
 <template>
-  <footer class="items-center justify-between p-3 border-t w-full flex justify-between bg-white">
+  <footer class="items-center p-3 border-t w-full flex justify-center bg-white">
     <span class="float-left">
       <a href="mailto:team@quickiecoin.com">
         <font-awesome-icon :icon="['fas', 'envelope']" class="icon alt" />

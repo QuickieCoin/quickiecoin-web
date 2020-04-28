@@ -21,6 +21,7 @@
         </label>
         <input
           id="email"
+          v-model="email"
           name="email"
           class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           type="email"
@@ -37,6 +38,7 @@
         </label>
         <input
           id="name"
+          v-model="name"
           name="name"
           class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           type="text"
@@ -53,6 +55,7 @@
         </label>
         <textarea
           id="message"
+          v-model="message"
           name="message"
           class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline form-textarea mt-1 block w-full"
           rows="3"
@@ -62,7 +65,7 @@
       </label>
 
       <div class="flex items-center justify-between">
-        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+        <button :disabled="!canSubmit" :class="`${!canSubmit && 'opacity-50 cursor-not-allowed'} bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full`" type="submit">
           Submit
         </button>
       </div>
@@ -72,18 +75,19 @@
 
 <script>
 export default {
-  name: 'ContactForm'
-  // props: {
-  //   item: {
-  //     type: Object,
-  //     required: true
-  //   }
-  // },
-  // methods: {
-  //   isAbsolute(url) {
-  //     return /^https?:\/\//.test(url)
-  //   }
-  // }
+  name: 'ContactForm',
+  data () {
+    return {
+      email: '',
+      name: '',
+      message: ''
+    }
+  },
+  computed: {
+    canSubmit () {
+      return !!(this.email && this.name && this.message)
+    }
+  }
 }
 </script>
 

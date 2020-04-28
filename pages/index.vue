@@ -48,6 +48,7 @@ export default {
   components: {
     ContactForm
   },
+  transition: 'slide-left',
   data () {
     return {
       douroBackground,
@@ -58,7 +59,13 @@ export default {
   },
   head () {
     return {
-      script: [{ src: 'https://embed.small.chat/TBRGBNPL0GCCGPR9KK.js' }]
+      htmlAttrs: {
+        lang: 'en'
+      },
+      script: [{ src: 'https://embed.small.chat/TBRGBNPL0GCCGPR9KK.js' }],
+      meta: [
+        { hid: 'description', name: 'description', content: 'QuickieCoin is the fastest, easiest and most secure way to buy Bitcoin in New Jersey.' }
+      ]
     }
   }
 }

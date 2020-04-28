@@ -1,19 +1,19 @@
 <template>
   <header>
     <nav class="flex items-center justify-between p-6 border-b w-full fixed bg-white qc-nav">
-      <router-link to="/" exact>
+      <NuxtLink to="/" exact>
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <img class="logo max-w-xs" src="~/assets/images/logo.png" alt="logo">
         </div>
-      </router-link>
+      </NuxtLink>
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-sm">
           <span v-for="link in links" v-bind:key="link.title">
-            <router-link :to="`/${link.url}`">
+            <NuxtLink :to="`/${link.url}`">
               <a class="mt-4 lg:inline-block lg:mt-0 quickiecoin-text quickiecoin-link mr-4">
                 {{ link.title }}
               </a>
-            </router-link>
+            </NuxtLink>
           </span>
         </div>
       </div>
