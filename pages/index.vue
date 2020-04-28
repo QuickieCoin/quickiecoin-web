@@ -15,9 +15,10 @@
 
         <div class="flex flex-wrap mb-4 m-auto">
           <div v-for="(step, index) in steps" :key="`step-${index+1}`" class="m-2 flex-1">
-            <video autoplay loop muted playsinline style="clip-path: circle(40%);">
+            <video autoplay loop muted playsinline style="clip-path: circle(50%);">
               <source :src="mp4s[index]" :alt="step" type="video/webm">
               <source :src="webms[index]" :alt="step" type="video/mp4">
+              <img src="videos/video.gif" title="Your browser does not support the $lt;video&gt; tag">
             </video>
             <h2 class="subtitle flex-1">
               {{ step }}
@@ -37,10 +38,13 @@
 import douroBackground from '~/assets/images/douro.jpg'
 import step1webm from '~/assets/images/get-bitcoins-step-1.webm'
 import step1mp4 from '~/assets/images/get-bitcoins-step-1.mp4'
+import step1gif from '~/assets/images/get-bitcoins-step-1.gif'
 import step2webm from '~/assets/images/get-bitcoins-step-2.webm'
 import step2mp4 from '~/assets/images/get-bitcoins-step-2.mp4'
+import step2gif from '~/assets/images/get-bitcoins-step-2.gif'
 import step3webm from '~/assets/images/get-bitcoins-step-3.webm'
 import step3mp4 from '~/assets/images/get-bitcoins-step-3.mp4'
+import step3gif from '~/assets/images/get-bitcoins-step-3.gif'
 
 import ContactForm from '~/components/ContactForm.vue'
 
@@ -54,7 +58,8 @@ export default {
       douroBackground,
       steps: ['Scan Your Wallet', 'Insert Cash', 'Send Bitcoin'],
       mp4s: [step1mp4, step2mp4, step3mp4],
-      webms: [step1webm, step2webm, step3webm]
+      webms: [step1webm, step2webm, step3webm],
+      gifs: [step1gif, step2gif, step3gif]
     }
   },
   head () {

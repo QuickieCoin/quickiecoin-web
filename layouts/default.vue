@@ -37,6 +37,11 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+body {
+  position: relative;
+}
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -75,7 +80,12 @@ html {
   color: #599bd5;
 }
 
+.quickiecoin-border {
+  border-color: #599bd5;
+}
+
 .quickiecoin-link:hover {
   color: #306594;
+  outline: none;
 }
 </style>

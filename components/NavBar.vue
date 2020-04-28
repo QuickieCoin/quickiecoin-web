@@ -7,7 +7,7 @@
         </div>
       </NuxtLink>
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div class="text-sm">
+        <div class="text-sm lg:flex-grow">
           <span v-for="link in links" v-bind:key="link.title">
             <NuxtLink :to="`/${link.url}`">
               <a class="mt-4 lg:inline-block lg:mt-0 quickiecoin-text quickiecoin-link mr-4">
