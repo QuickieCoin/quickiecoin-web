@@ -18,7 +18,7 @@
             <video autoplay loop muted playsinline style="clip-path: circle(50%);">
               <source :src="mp4s[index]" :alt="step" type="video/webm">
               <source :src="webms[index]" :alt="step" type="video/mp4">
-              <img src="videos/video.gif" title="Your browser does not support the $lt;video&gt; tag">
+              <img :src="gifs[index]" :title="step">
             </video>
             <h2 class="subtitle flex-1">
               {{ step }}
