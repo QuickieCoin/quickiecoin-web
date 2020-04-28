@@ -15,10 +15,16 @@
 
         <div class="flex flex-wrap mb-4 m-auto">
           <div v-for="(step, index) in steps" :key="`step-${index+1}`" class="m-2 flex-1">
-            <video autoplay loop muted playsinline style="clip-path: circle(50%);">
+            <video
+              :poster="gifs[index]"
+              autoplay
+              loop
+              muted
+              playsinline
+              style="clip-path: circle(50%);"
+            >
               <source :src="mp4s[index]" :alt="step" type="video/webm">
               <source :src="webms[index]" :alt="step" type="video/mp4">
-              <img :src="gifs[index]" :title="step">
             </video>
             <h2 class="subtitle flex-1">
               {{ step }}
