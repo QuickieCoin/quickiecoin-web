@@ -39,7 +39,8 @@ html {
 }
 
 body {
-  position: relative;
+  position: absolute;
+  min-width: 415px;
 }
 
 .container {
