@@ -5,8 +5,14 @@
         <h1 class="title">
           Locations
         </h1>
-        <div v-for="location in locations" v-bind:key="location.id">
+        <div v-for="location in locations.filter(location => location.open)" v-bind:key="location.id">
           <LocationCard :location="location" class="m-4 w-full" />
+        </div>
+
+        <div v-for="location in locations.filter(location => !location.open)" v-bind:key="location.id">
+          <div class="currently-closed">
+            <LocationCard :location="location" class="m-4 w-full" />
+          </div>
         </div>
       </div>
     </div>
@@ -46,6 +52,10 @@ export default {
   .title {
     color: black;
     margin: 20px 0;
+  }
+
+  .currently-closed {
+    opacity: 0.3;
   }
 }
 </style>

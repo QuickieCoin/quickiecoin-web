@@ -1,14 +1,13 @@
 <template>
-  <div
-    class="map">
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+  <div class="map">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
     <no-ssr>
       <MglMap
         :access-token="accessToken"
         :map-style="'mapbox://styles/pinpartdev/cj09ooc9g00a12sqpnkum9wcd'"
         :center="[4.7835, 52.3491]"
-        :zoom="6">
-                <!-- @load="onMapLoaded" -->
+        :zoom="6"
+      >
         <MglGeolocateControl ref="geolocateControl" />
       </MglMap>
     </no-ssr>
