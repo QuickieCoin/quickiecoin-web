@@ -41,6 +41,8 @@ html {
 body {
   position: absolute;
   min-width: 415px;
+  left: 0;
+  right: 0;
 }
 
 .container {
