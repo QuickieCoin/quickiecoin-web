@@ -2,7 +2,7 @@
   <footer class="items-center p-3 border-t w-full flex justify-center bg-white">
     <span class="float-left">
       <a href="mailto:team@quickiecoin.com">
-        <font-awesome-icon :icon="['fas', 'envelope']" size="xs" class="icon alt" />
+        <!-- <font-awesome-icon :icon="['fas', 'envelope']" size="xs" class="icon alt" /> -->
         <span class="mr-2">team@quickiecoin.com</span>
       </a>
     </span>
