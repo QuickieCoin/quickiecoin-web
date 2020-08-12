@@ -7,7 +7,7 @@
     <form
       class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
       name="contact-form"
-      method="post"
+      method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       data-netlify-recaptcha="true"
