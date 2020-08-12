@@ -32,14 +32,14 @@
     "vue-mapbox": "^0.4.1",
     "xss-filters": "^1.2.7",
     "@nuxtjs/eslint-module": "^1.2.0",
-    "@nuxtjs/tailwindcss": "^1.4.1"
+    "@nuxtjs/tailwindcss": "^1.4.1",
+    "sass-loader": "^8.0.2",
+    "node-sass": "^4.14.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.1.0",
-    "eslint-plugin-nuxt": "^1.0.0",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2"
+    "eslint-plugin-nuxt": "^1.0.0"
   }
 }
