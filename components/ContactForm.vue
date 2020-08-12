@@ -13,13 +13,17 @@
       data-netlify-recaptcha="true"
     >
       <input type="hidden" name="form-name" value="contact-form">
+      <p class="hidden">
+        <label>
+          Don’t fill this out if you're human:
+          <input name="bot-field">
+        </label>
+      </p>
       <div class="mb-4">
         <label
           class="block text-gray-700 text-xl font-bold mb-2"
           for="email"
-        >
-          Email
-        </label>
+        >Email</label>
         <input
           id="email"
           v-model="email"
@@ -34,9 +38,7 @@
         <label
           class="block text-gray-700 text-xl font-bold mb-2"
           for="name"
-        >
-          Name
-        </label>
+        >Name</label>
         <input
           id="name"
           v-model="name"
@@ -51,9 +53,7 @@
         <label
           class="block text-gray-700 text-xl font-bold mb-2"
           for="message"
-        >
-          Message
-        </label>
+        >Message</label>
         <textarea
           id="message"
           v-model="message"
@@ -66,7 +66,14 @@
       </label>
       <div data-netlify-recaptcha="true" />
       <div class="flex items-center justify-between">
-        <button :disabled="!canSubmit" :class="`${!canSubmit && 'opacity-50 cursor-not-allowed'} bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full`" type="submit">
+        <button
+          :disabled="!canSubmit"
+          :class="
+            `${!canSubmit &&
+              'opacity-50 cursor-not-allowed'} bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full`
+          "
+          type="submit"
+        >
           Submit
         </button>
       </div>
@@ -92,6 +99,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>
