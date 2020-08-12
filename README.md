@@ -23,8 +23,6 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 Needed Fixes
 
-- Mobile Friendly
-- Maps not showing on mobile?
 - Add FAQs
 - Add Sanity Studio into repo + at /admin
 - Fix lighthouse score, especially for mobile
