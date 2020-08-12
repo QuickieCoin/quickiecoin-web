@@ -5,17 +5,17 @@ export default {
   head: {
     title: 'QuickieCoin',
     meta: [{
-      charset: 'utf-8'
-    },
-    {
-      name: 'viewport',
-      content: 'width=device-width, initial-scale=1'
-    },
-    {
-      hid: 'description',
-      name: 'description',
-      content: process.env.npm_package_description || ''
-    }
+        charset: 'utf-8'
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
+      }
     ],
     link: [{
       rel: 'icon',
@@ -27,10 +27,18 @@ export default {
     color: '#fff'
   },
   css: [],
-  plugins: [
-    { src: '~/plugins/mapbox', mode: 'client' },
-    { src: '~/plugins/ga', mode: 'client' },
-    { src: '~/plugins/hotjar', mode: 'client' }
+  plugins: [{
+      src: '~/plugins/mapbox',
+      mode: 'client'
+    },
+    {
+      src: '~/plugins/ga',
+      mode: 'client'
+    },
+    {
+      src: '~/plugins/hotjar',
+      mode: 'client'
+    }
   ],
   buildModules: [
     '@nuxtjs/eslint-module',
@@ -50,13 +58,14 @@ export default {
     }],
     ['nuxt-fontawesome', {
       imports: [{
-        set: '@fortawesome/free-solid-svg-icons',
-        icons: ['fas']
-      },
-      {
-        set: '@fortawesome/free-brands-svg-icons',
-        icons: ['fab']
-      }]
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['fas']
+        },
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: ['fab']
+        }
+      ]
     }]
   ],
   axios: {},
@@ -64,7 +73,7 @@ export default {
     injected: true
   },
   build: {
-    extend (config, ctx) {}
+    extend(config, ctx) {}
   },
   vue: {
     config: {
