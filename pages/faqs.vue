@@ -7,7 +7,9 @@
         </h1>
 
         <div v-for="faqType in faqs" v-bind:key="faqType.id">
-          {{ faq }}
+          <div v-for="faqItem in faqType.faqItems" v-bind:key="faqItem.id">
+            <!-- {{ faqItem }} -->
+          </div>
         </div>
       </div>
     </div>

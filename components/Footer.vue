@@ -1,16 +1,26 @@
 <template>
-  <footer class="items-center p-3 border-t w-full flex justify-center bg-white">
-    <span class="float-left">
+  <footer class="flex justify-between items-center border-t-2">
+    <div>
+      <ul class="flex row">
+        <li class="px-5">
+          <a class="nav-links text-blue-900" href="/privacy">Privacy Policy</a>
+        </li>
+        <li class="px-5">
+          <a class="nav-links text-blue-900" href="/terms">Terms and Conditions</a>
+        </li>
+      </ul>
+    </div>
+    <div>
       <a href="mailto:team@quickiecoin.com">
-        <!-- <font-awesome-icon :icon="['fas', 'envelope']" size="xs" class="icon alt" /> -->
+        <font-awesome-icon :icon="['fas', 'envelope']" size="xs" class="icon alt" />
         <span class="mr-2">team@quickiecoin.com</span>
       </a>
-    </span>
-    <span class="icon-content float-right">
+    </div>
+    <div>
       <a v-for="social in socials" :href="`http://${social}.com/quickiecoin`" :key="`social-${social}`" target="_blank">
         <font-awesome-icon :icon="['fab', social]" size="3x" class="icon alt mx-3" />
       </a>
-    </span>
+    </div>
   </footer>
 </template>
 
@@ -29,11 +39,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.icon-content {
-  width: 75px;
-  display: flex;
-  flex-direction: row;
-}
-</style>
