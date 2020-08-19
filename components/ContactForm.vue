@@ -10,7 +10,6 @@
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      data-netlify-recaptcha="true"
     >
       <input type="hidden" name="form-name" value="contact-form">
       <p class="hidden">
@@ -64,7 +63,6 @@
           data-hj-whitelist
         />
       </label>
-      <div data-netlify-recaptcha="true" />
       <div class="flex items-center justify-between">
         <button
           :disabled="!canSubmit"
