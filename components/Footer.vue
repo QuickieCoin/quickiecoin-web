@@ -1,40 +1,41 @@
 <template>
-  <footer class="flex justify-between items-center border-t-2">
+  <footer class="flex justify-between items-center border-t-2 py-5 mb-16">
     <div>
       <ul class="flex row">
         <li class="px-5">
-          <a class="nav-links text-blue-900" href="/privacy">Privacy Policy</a>
+          <a class="nav-links text-blue-900" target="_blank" href="/privacy">Privacy Policy</a>
         </li>
         <li class="px-5">
-          <a class="nav-links text-blue-900" href="/terms">Terms and Conditions</a>
+          <a class="nav-links text-blue-900" target="_blank" href="/terms">Terms and Conditions</a>
         </li>
       </ul>
     </div>
-    <div>
-      <a href="mailto:team@quickiecoin.com">
-        <font-awesome-icon :icon="['fas', 'envelope']" size="xs" class="icon alt" />
-        <span class="mr-2">team@quickiecoin.com</span>
-      </a>
-    </div>
-    <div>
+    <div class="flex flex-row">
       <a v-for="social in socials" :href="`http://${social}.com/quickiecoin`" :key="`social-${social}`" target="_blank">
-        <font-awesome-icon :icon="['fab', social]" size="3x" class="icon alt mx-3" />
+        <img class="mx-2" :height="iconSize" :width="iconSize" :src="logos[social]"/>
+      </a>
+      <a class="flex flex-row" href="mailto:team@quickiecoin.com">
+        <img class="mx-2" :height="iconSize" :width="iconSize" :src="logos.mail"/>
+        <span class="mr-2">team@quickiecoin.com</span>
       </a>
     </div>
   </footer>
 </template>
 
 <script>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import instagram from '~/assets/images/icons/instagram.svg'
+import twitter from '~/assets/images/icons/twitter.svg'
+import mail from '~/assets/images/icons/mail.svg'
 
 export default {
   name: 'Footer',
-  components: {
-    FontAwesomeIcon
-  },
   data () {
     return {
-      socials: ['instagram', 'twitter']
+      socials: ['instagram', 'twitter'],
+      iconSize: 25,
+      logos: {
+        twitter, instagram, mail
+      }
     }
   }
 }
