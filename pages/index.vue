@@ -14,7 +14,7 @@
         </h1>
 
         <div class="flex flex-wrap mb-4 m-auto">
-          <div v-for="(step, index) in steps" :key="`step-${index+1}`" class="m-2 flex-1">
+          <div v-for="(step, index) in steps" :key="`step-${index+1}`" class="m-20 flex-1">
             <video
               :poster="gifs[index]"
               autoplay
