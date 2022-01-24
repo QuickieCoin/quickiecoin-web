@@ -30,8 +30,8 @@ export default {
   data () {
     return {
       links: [
-        { url: 'locations', title: 'Locations' }
-        // { url: 'faq', title: 'FAQ' }
+        { url: 'locations', title: 'Locations' },
+        { url: 'wires', title: 'Wires' }
       ]
     }
   }
