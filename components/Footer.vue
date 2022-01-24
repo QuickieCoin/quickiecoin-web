@@ -12,10 +12,10 @@
     </div>
     <div class="flex flex-row">
       <a v-for="social in socials" :href="`http://${social}.com/quickiecoin`" :key="`social-${social}`" target="_blank">
-        <img class="mx-2" :height="iconSize" :width="iconSize" :src="logos[social]"/>
+        <img :height="iconSize" :width="iconSize" :src="logos[social]" class="mx-2">
       </a>
       <a class="flex flex-row" href="mailto:team@quickiecoin.com">
-        <img class="mx-2" :height="iconSize" :width="iconSize" :src="logos.mail"/>
+        <img :height="iconSize" :width="iconSize" :src="logos.mail" class="mx-2">
         <span class="mr-2">team@quickiecoin.com</span>
       </a>
     </div>
