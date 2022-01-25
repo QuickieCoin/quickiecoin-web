@@ -43,18 +43,18 @@
             </span>
           </div>
         </div>
-        <ContactForm class="m-auto" />
+        <WireForm class="m-auto" />
       </div>
     </div>
   </main>
 </template>
 
 <script>
-import ContactForm from '~/components/ContactForm.vue'
+import WireForm from '~/components/WireForm.vue'
 
 export default {
   components: {
-    ContactForm
+    WireForm
   }
 }
 </script>
