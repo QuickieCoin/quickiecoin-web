@@ -4,6 +4,7 @@
     <form
       class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
       name="wire-form"
+      action="/pages/wire-signup"
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
@@ -52,7 +53,6 @@
             `${!canSubmit &&
               'opacity-50 cursor-not-allowed'} bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full`
           "
-          @click="continueToWires"
           type="submit"
         >
           Next
@@ -74,13 +74,6 @@ export default {
   computed: {
     canSubmit () {
       return this.email && this.email.includes('@') && this.email.includes('.') && this.name
-    }
-  },
-  methods: {
-    continueToWires () {
-      if (this.canSubmit) {
-        this.$router.push('/wire-signup')
-      }
     }
   }
 }
