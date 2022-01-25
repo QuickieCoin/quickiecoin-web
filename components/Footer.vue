@@ -1,6 +1,6 @@
 <template>
   <footer class="flex-column justify-between items-center border-t-2 mb-8">
-    <div class=mt-3>
+    <div class="mt-3">
       <ul class="flex row">
         <li class="px-5 m-auto">
           <a class="nav-links text-blue-900" target="_blank" href="/privacy">Privacy Policy</a>
